@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/home/nick/dev/engine/build",
+  "command": "/usr/bin/cc  -I/home/nick/dev/engine/third_party/glad/include  -o CMakeFiles/glad.dir/third_party/glad/glad.c.o -c /home/nick/dev/engine/third_party/glad/glad.c",
+  "file": "/home/nick/dev/engine/third_party/glad/glad.c",
+  "output": "CMakeFiles/glad.dir/third_party/glad/glad.c.o"
+},
+{
+  "directory": "/home/nick/dev/engine/build",
+  "command": "/usr/bin/c++ -DENGINE_DEBUG -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/stb -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o -c /home/nick/dev/engine/src/collision/CollisionSystem.cpp",
+  "file": "/home/nick/dev/engine/src/collision/CollisionSystem.cpp",
+  "output": "CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o"
+},
+{
+  "directory": "/home/nick/dev/engine/build",
+  "command": "/usr/bin/c++ -DENGINE_DEBUG -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/stb -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o -c /home/nick/dev/engine/src/core/Engine.cpp",
+  "file": "/home/nick/dev/engine/src/core/Engine.cpp",
+  "output": "CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o"
+},
+{
+  "directory": "/home/nick/dev/engine/build",
+  "command": "/usr/bin/c++ -DENGINE_DEBUG -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/stb -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.o -c /home/nick/dev/engine/src/ecs/systems/PhysicsSystem.cpp",
+  "file": "/home/nick/dev/engine/src/ecs/systems/PhysicsSystem.cpp",
+  "output": "CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.o"
+},
+{
+  "directory": "/home/nick/dev/engine/build",
+  "command": "/usr/bin/c++ -DENGINE_DEBUG -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/stb -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/engine_lib.dir/src/ecs/systems/RenderSystem.cpp.o -c /home/nick/dev/engine/src/ecs/systems/RenderSystem.cpp",
+  "file": "/home/nick/dev/engine/src/ecs/systems/RenderSystem.cpp",
+  "output": "CMakeFiles/engine_lib.dir/src/ecs/systems/RenderSystem.cpp.o"
+},
+{
+  "directory": "/home/nick/dev/engine/build",
+  "command": "/usr/bin/c++ -DENGINE_DEBUG -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/stb -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/engine_lib.dir/src/input/InputManager.cpp.o -c /home/nick/dev/engine/src/input/InputManager.cpp",
+  "file": "/home/nick/dev/engine/src/input/InputManager.cpp",
+  "output": "CMakeFiles/engine_lib.dir/src/input/InputManager.cpp.o"
+},
+{
+  "directory": "/home/nick/dev/engine/build",
+  "command": "/usr/bin/c++ -DENGINE_DEBUG -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/stb -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/engine_lib.dir/src/renderer/Camera.cpp.o -c /home/nick/dev/engine/src/renderer/Camera.cpp",
+  "file": "/home/nick/dev/engine/src/renderer/Camera.cpp",
+  "output": "CMakeFiles/engine_lib.dir/src/renderer/Camera.cpp.o"
+},
+{
+  "directory": "/home/nick/dev/engine/build",
+  "command": "/usr/bin/c++ -DENGINE_DEBUG -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/stb -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/engine_lib.dir/src/renderer/DebugDraw.cpp.o -c /home/nick/dev/engine/src/renderer/DebugDraw.cpp",
+  "file": "/home/nick/dev/engine/src/renderer/DebugDraw.cpp",
+  "output": "CMakeFiles/engine_lib.dir/src/renderer/DebugDraw.cpp.o"
+},
+{
+  "directory": "/home/nick/dev/engine/build",
+  "command": "/usr/bin/c++ -DENGINE_DEBUG -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/stb -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/engine_lib.dir/src/renderer/ShaderProgram.cpp.o -c /home/nick/dev/engine/src/renderer/ShaderProgram.cpp",
+  "file": "/home/nick/dev/engine/src/renderer/ShaderProgram.cpp",
+  "output": "CMakeFiles/engine_lib.dir/src/renderer/ShaderProgram.cpp.o"
+},
+{
+  "directory": "/home/nick/dev/engine/build",
+  "command": "/usr/bin/c++ -DENGINE_DEBUG -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/stb -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/engine_lib.dir/src/renderer/SpriteBatch.cpp.o -c /home/nick/dev/engine/src/renderer/SpriteBatch.cpp",
+  "file": "/home/nick/dev/engine/src/renderer/SpriteBatch.cpp",
+  "output": "CMakeFiles/engine_lib.dir/src/renderer/SpriteBatch.cpp.o"
+},
+{
+  "directory": "/home/nick/dev/engine/build",
+  "command": "/usr/bin/c++ -DENGINE_DEBUG -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/stb -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/engine_lib.dir/src/renderer/Texture.cpp.o -c /home/nick/dev/engine/src/renderer/Texture.cpp",
+  "file": "/home/nick/dev/engine/src/renderer/Texture.cpp",
+  "output": "CMakeFiles/engine_lib.dir/src/renderer/Texture.cpp.o"
+},
+{
+  "directory": "/home/nick/dev/engine/build",
+  "command": "/usr/bin/c++ -DENGINE_DEBUG -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/stb -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/engine_lib.dir/src/renderer/Window.cpp.o -c /home/nick/dev/engine/src/renderer/Window.cpp",
+  "file": "/home/nick/dev/engine/src/renderer/Window.cpp",
+  "output": "CMakeFiles/engine_lib.dir/src/renderer/Window.cpp.o"
+},
+{
+  "directory": "/home/nick/dev/engine/build",
+  "command": "/usr/bin/c++ -DENGINE_DEBUG -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/stb -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/engine_lib.dir/src/scene/SceneManager.cpp.o -c /home/nick/dev/engine/src/scene/SceneManager.cpp",
+  "file": "/home/nick/dev/engine/src/scene/SceneManager.cpp",
+  "output": "CMakeFiles/engine_lib.dir/src/scene/SceneManager.cpp.o"
+},
+{
+  "directory": "/home/nick/dev/engine/build/game",
+  "command": "/usr/bin/c++ -DENGINE_DEBUG -I/home/nick/dev/engine/game/src -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/game.dir/src/GameScene.cpp.o -c /home/nick/dev/engine/game/src/GameScene.cpp",
+  "file": "/home/nick/dev/engine/game/src/GameScene.cpp",
+  "output": "game/CMakeFiles/game.dir/src/GameScene.cpp.o"
+},
+{
+  "directory": "/home/nick/dev/engine/build/game",
+  "command": "/usr/bin/c++ -DENGINE_DEBUG -I/home/nick/dev/engine/game/src -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/game.dir/src/main.cpp.o -c /home/nick/dev/engine/game/src/main.cpp",
+  "file": "/home/nick/dev/engine/game/src/main.cpp",
+  "output": "game/CMakeFiles/game.dir/src/main.cpp.o"
+}
+]

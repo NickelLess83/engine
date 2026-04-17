@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/nick/dev/engine/build/cmake_install.cmake",
+		"/home/nick/dev/engine/build/game/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
