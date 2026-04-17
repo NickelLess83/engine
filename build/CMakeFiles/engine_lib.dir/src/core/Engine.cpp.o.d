@@ -349,6 +349,9 @@ CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o: \
  /home/nick/dev/engine/src/ecs/Registry.hpp \
  /home/nick/dev/engine/src/ecs/Entity.hpp \
  /home/nick/dev/engine/src/ecs/SparseSet.hpp \
+ /home/nick/dev/engine/src/audio/AudioSystem.hpp \
+ /home/nick/dev/engine/src/audio/AudioEvent.hpp \
+ /usr/include/c++/15.2.1/optional \
  /home/nick/dev/engine/third_party/glad/include/glad/glad.h \
  /home/nick/dev/engine/third_party/glad/include/KHR/khrplatform.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \

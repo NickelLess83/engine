@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/nick/dev/engine/src/audio/AudioSystem.cpp" "CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.o" "gcc" "CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.o.d"
+  "/home/nick/dev/engine/src/audio/Music.cpp" "CMakeFiles/engine_lib.dir/src/audio/Music.cpp.o" "gcc" "CMakeFiles/engine_lib.dir/src/audio/Music.cpp.o.d"
+  "/home/nick/dev/engine/src/audio/Sound.cpp" "CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.o" "gcc" "CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.o.d"
   "/home/nick/dev/engine/src/collision/CollisionSystem.cpp" "CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o" "gcc" "CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o.d"
   "/home/nick/dev/engine/src/core/Engine.cpp" "CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o" "gcc" "CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o.d"
   "/home/nick/dev/engine/src/ecs/systems/PhysicsSystem.cpp" "CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.o" "gcc" "CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.o.d"

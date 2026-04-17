@@ -6,5 +6,5 @@ CXX_DEFINES = -DENGINE_DEBUG
 
 CXX_INCLUDES = -I/home/nick/dev/engine/game/src -I/home/nick/dev/engine/src -I/home/nick/dev/engine/third_party/glad/include -isystem /usr/include/SDL2
 
-CXX_FLAGS = -std=gnu++20
+CXX_FLAGS = -g -std=gnu++20
 

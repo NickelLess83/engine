@@ -349,7 +349,9 @@ game/CMakeFiles/game.dir/src/main.cpp.o: \
  /home/nick/dev/engine/src/ecs/Registry.hpp \
  /home/nick/dev/engine/src/ecs/Entity.hpp \
  /home/nick/dev/engine/src/ecs/SparseSet.hpp \
- /home/nick/dev/engine/src/ecs/View.hpp \
+ /home/nick/dev/engine/src/audio/AudioSystem.hpp \
+ /home/nick/dev/engine/src/audio/AudioEvent.hpp \
+ /usr/include/c++/15.2.1/optional /home/nick/dev/engine/src/ecs/View.hpp \
  /home/nick/dev/engine/game/src/GameScene.hpp \
  /home/nick/dev/engine/src/ecs/systems/PhysicsSystem.hpp \
  /home/nick/dev/engine/src/ecs/systems/RenderSystem.hpp \

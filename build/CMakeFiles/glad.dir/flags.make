@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/nick/dev/engine/third_party/glad/include
 
-C_FLAGS = 
+C_FLAGS = -g
 
