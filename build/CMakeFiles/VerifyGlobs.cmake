@@ -28,9 +28,12 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   file(TOUCH_NOCREATE "/home/nick/dev/engine/build/CMakeFiles/cmake.verify_globs")
 endif()
 
-# ENGINE_SOURCES at CMakeLists.txt:16 (file)
+# ENGINE_SOURCES at CMakeLists.txt:20 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/nick/dev/engine/src/*.cpp")
 set(OLD_GLOB
+  "/home/nick/dev/engine/src/audio/AudioSystem.cpp"
+  "/home/nick/dev/engine/src/audio/Music.cpp"
+  "/home/nick/dev/engine/src/audio/Sound.cpp"
   "/home/nick/dev/engine/src/collision/CollisionSystem.cpp"
   "/home/nick/dev/engine/src/core/Engine.cpp"
   "/home/nick/dev/engine/src/ecs/systems/PhysicsSystem.cpp"

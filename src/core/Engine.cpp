@@ -81,6 +81,7 @@ void Engine::update(float dt)
         m_debug.enabled = !m_debug.enabled;
 
     m_scenes.update(dt, m_input);
+    m_audio.update(m_audioQueue, m_assets, m_camera.position);
 }
 
 void Engine::render(float alpha)

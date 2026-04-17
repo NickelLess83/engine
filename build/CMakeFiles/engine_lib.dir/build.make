@@ -72,10 +72,52 @@ include CMakeFiles/engine_lib.dir/flags.make
 CMakeFiles/engine_lib.dir/codegen:
 .PHONY : CMakeFiles/engine_lib.dir/codegen
 
+CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.o: CMakeFiles/engine_lib.dir/flags.make
+CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.o: /home/nick/dev/engine/src/audio/AudioSystem.cpp
+CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.o -MF CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.o.d -o CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.o -c /home/nick/dev/engine/src/audio/AudioSystem.cpp
+
+CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nick/dev/engine/src/audio/AudioSystem.cpp > CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.i
+
+CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nick/dev/engine/src/audio/AudioSystem.cpp -o CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.s
+
+CMakeFiles/engine_lib.dir/src/audio/Music.cpp.o: CMakeFiles/engine_lib.dir/flags.make
+CMakeFiles/engine_lib.dir/src/audio/Music.cpp.o: /home/nick/dev/engine/src/audio/Music.cpp
+CMakeFiles/engine_lib.dir/src/audio/Music.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/engine_lib.dir/src/audio/Music.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/audio/Music.cpp.o -MF CMakeFiles/engine_lib.dir/src/audio/Music.cpp.o.d -o CMakeFiles/engine_lib.dir/src/audio/Music.cpp.o -c /home/nick/dev/engine/src/audio/Music.cpp
+
+CMakeFiles/engine_lib.dir/src/audio/Music.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine_lib.dir/src/audio/Music.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nick/dev/engine/src/audio/Music.cpp > CMakeFiles/engine_lib.dir/src/audio/Music.cpp.i
+
+CMakeFiles/engine_lib.dir/src/audio/Music.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine_lib.dir/src/audio/Music.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nick/dev/engine/src/audio/Music.cpp -o CMakeFiles/engine_lib.dir/src/audio/Music.cpp.s
+
+CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.o: CMakeFiles/engine_lib.dir/flags.make
+CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.o: /home/nick/dev/engine/src/audio/Sound.cpp
+CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.o -MF CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.o.d -o CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.o -c /home/nick/dev/engine/src/audio/Sound.cpp
+
+CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nick/dev/engine/src/audio/Sound.cpp > CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.i
+
+CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nick/dev/engine/src/audio/Sound.cpp -o CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.s
+
 CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o: CMakeFiles/engine_lib.dir/flags.make
 CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o: /home/nick/dev/engine/src/collision/CollisionSystem.cpp
 CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o -MF CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o.d -o CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o -c /home/nick/dev/engine/src/collision/CollisionSystem.cpp
 
 CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.i: cmake_force
@@ -89,7 +131,7 @@ CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.s: cmake_force
 CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o: CMakeFiles/engine_lib.dir/flags.make
 CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o: /home/nick/dev/engine/src/core/Engine.cpp
 CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o -MF CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o.d -o CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o -c /home/nick/dev/engine/src/core/Engine.cpp
 
 CMakeFiles/engine_lib.dir/src/core/Engine.cpp.i: cmake_force
@@ -103,7 +145,7 @@ CMakeFiles/engine_lib.dir/src/core/Engine.cpp.s: cmake_force
 CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.o: CMakeFiles/engine_lib.dir/flags.make
 CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.o: /home/nick/dev/engine/src/ecs/systems/PhysicsSystem.cpp
 CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.o -MF CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.o.d -o CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.o -c /home/nick/dev/engine/src/ecs/systems/PhysicsSystem.cpp
 
 CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.i: cmake_force
@@ -117,7 +159,7 @@ CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.s: cmake_force
 CMakeFiles/engine_lib.dir/src/ecs/systems/RenderSystem.cpp.o: CMakeFiles/engine_lib.dir/flags.make
 CMakeFiles/engine_lib.dir/src/ecs/systems/RenderSystem.cpp.o: /home/nick/dev/engine/src/ecs/systems/RenderSystem.cpp
 CMakeFiles/engine_lib.dir/src/ecs/systems/RenderSystem.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/engine_lib.dir/src/ecs/systems/RenderSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/engine_lib.dir/src/ecs/systems/RenderSystem.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/ecs/systems/RenderSystem.cpp.o -MF CMakeFiles/engine_lib.dir/src/ecs/systems/RenderSystem.cpp.o.d -o CMakeFiles/engine_lib.dir/src/ecs/systems/RenderSystem.cpp.o -c /home/nick/dev/engine/src/ecs/systems/RenderSystem.cpp
 
 CMakeFiles/engine_lib.dir/src/ecs/systems/RenderSystem.cpp.i: cmake_force
@@ -131,7 +173,7 @@ CMakeFiles/engine_lib.dir/src/ecs/systems/RenderSystem.cpp.s: cmake_force
 CMakeFiles/engine_lib.dir/src/input/InputManager.cpp.o: CMakeFiles/engine_lib.dir/flags.make
 CMakeFiles/engine_lib.dir/src/input/InputManager.cpp.o: /home/nick/dev/engine/src/input/InputManager.cpp
 CMakeFiles/engine_lib.dir/src/input/InputManager.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/engine_lib.dir/src/input/InputManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/engine_lib.dir/src/input/InputManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/input/InputManager.cpp.o -MF CMakeFiles/engine_lib.dir/src/input/InputManager.cpp.o.d -o CMakeFiles/engine_lib.dir/src/input/InputManager.cpp.o -c /home/nick/dev/engine/src/input/InputManager.cpp
 
 CMakeFiles/engine_lib.dir/src/input/InputManager.cpp.i: cmake_force
@@ -145,7 +187,7 @@ CMakeFiles/engine_lib.dir/src/input/InputManager.cpp.s: cmake_force
 CMakeFiles/engine_lib.dir/src/renderer/Camera.cpp.o: CMakeFiles/engine_lib.dir/flags.make
 CMakeFiles/engine_lib.dir/src/renderer/Camera.cpp.o: /home/nick/dev/engine/src/renderer/Camera.cpp
 CMakeFiles/engine_lib.dir/src/renderer/Camera.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/engine_lib.dir/src/renderer/Camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/engine_lib.dir/src/renderer/Camera.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/renderer/Camera.cpp.o -MF CMakeFiles/engine_lib.dir/src/renderer/Camera.cpp.o.d -o CMakeFiles/engine_lib.dir/src/renderer/Camera.cpp.o -c /home/nick/dev/engine/src/renderer/Camera.cpp
 
 CMakeFiles/engine_lib.dir/src/renderer/Camera.cpp.i: cmake_force
@@ -159,7 +201,7 @@ CMakeFiles/engine_lib.dir/src/renderer/Camera.cpp.s: cmake_force
 CMakeFiles/engine_lib.dir/src/renderer/DebugDraw.cpp.o: CMakeFiles/engine_lib.dir/flags.make
 CMakeFiles/engine_lib.dir/src/renderer/DebugDraw.cpp.o: /home/nick/dev/engine/src/renderer/DebugDraw.cpp
 CMakeFiles/engine_lib.dir/src/renderer/DebugDraw.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/engine_lib.dir/src/renderer/DebugDraw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/engine_lib.dir/src/renderer/DebugDraw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/renderer/DebugDraw.cpp.o -MF CMakeFiles/engine_lib.dir/src/renderer/DebugDraw.cpp.o.d -o CMakeFiles/engine_lib.dir/src/renderer/DebugDraw.cpp.o -c /home/nick/dev/engine/src/renderer/DebugDraw.cpp
 
 CMakeFiles/engine_lib.dir/src/renderer/DebugDraw.cpp.i: cmake_force
@@ -173,7 +215,7 @@ CMakeFiles/engine_lib.dir/src/renderer/DebugDraw.cpp.s: cmake_force
 CMakeFiles/engine_lib.dir/src/renderer/ShaderProgram.cpp.o: CMakeFiles/engine_lib.dir/flags.make
 CMakeFiles/engine_lib.dir/src/renderer/ShaderProgram.cpp.o: /home/nick/dev/engine/src/renderer/ShaderProgram.cpp
 CMakeFiles/engine_lib.dir/src/renderer/ShaderProgram.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/engine_lib.dir/src/renderer/ShaderProgram.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/engine_lib.dir/src/renderer/ShaderProgram.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/renderer/ShaderProgram.cpp.o -MF CMakeFiles/engine_lib.dir/src/renderer/ShaderProgram.cpp.o.d -o CMakeFiles/engine_lib.dir/src/renderer/ShaderProgram.cpp.o -c /home/nick/dev/engine/src/renderer/ShaderProgram.cpp
 
 CMakeFiles/engine_lib.dir/src/renderer/ShaderProgram.cpp.i: cmake_force
@@ -187,7 +229,7 @@ CMakeFiles/engine_lib.dir/src/renderer/ShaderProgram.cpp.s: cmake_force
 CMakeFiles/engine_lib.dir/src/renderer/SpriteBatch.cpp.o: CMakeFiles/engine_lib.dir/flags.make
 CMakeFiles/engine_lib.dir/src/renderer/SpriteBatch.cpp.o: /home/nick/dev/engine/src/renderer/SpriteBatch.cpp
 CMakeFiles/engine_lib.dir/src/renderer/SpriteBatch.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/engine_lib.dir/src/renderer/SpriteBatch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/engine_lib.dir/src/renderer/SpriteBatch.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/renderer/SpriteBatch.cpp.o -MF CMakeFiles/engine_lib.dir/src/renderer/SpriteBatch.cpp.o.d -o CMakeFiles/engine_lib.dir/src/renderer/SpriteBatch.cpp.o -c /home/nick/dev/engine/src/renderer/SpriteBatch.cpp
 
 CMakeFiles/engine_lib.dir/src/renderer/SpriteBatch.cpp.i: cmake_force
@@ -201,7 +243,7 @@ CMakeFiles/engine_lib.dir/src/renderer/SpriteBatch.cpp.s: cmake_force
 CMakeFiles/engine_lib.dir/src/renderer/Texture.cpp.o: CMakeFiles/engine_lib.dir/flags.make
 CMakeFiles/engine_lib.dir/src/renderer/Texture.cpp.o: /home/nick/dev/engine/src/renderer/Texture.cpp
 CMakeFiles/engine_lib.dir/src/renderer/Texture.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/engine_lib.dir/src/renderer/Texture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/engine_lib.dir/src/renderer/Texture.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/renderer/Texture.cpp.o -MF CMakeFiles/engine_lib.dir/src/renderer/Texture.cpp.o.d -o CMakeFiles/engine_lib.dir/src/renderer/Texture.cpp.o -c /home/nick/dev/engine/src/renderer/Texture.cpp
 
 CMakeFiles/engine_lib.dir/src/renderer/Texture.cpp.i: cmake_force
@@ -215,7 +257,7 @@ CMakeFiles/engine_lib.dir/src/renderer/Texture.cpp.s: cmake_force
 CMakeFiles/engine_lib.dir/src/renderer/Window.cpp.o: CMakeFiles/engine_lib.dir/flags.make
 CMakeFiles/engine_lib.dir/src/renderer/Window.cpp.o: /home/nick/dev/engine/src/renderer/Window.cpp
 CMakeFiles/engine_lib.dir/src/renderer/Window.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/engine_lib.dir/src/renderer/Window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/engine_lib.dir/src/renderer/Window.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/renderer/Window.cpp.o -MF CMakeFiles/engine_lib.dir/src/renderer/Window.cpp.o.d -o CMakeFiles/engine_lib.dir/src/renderer/Window.cpp.o -c /home/nick/dev/engine/src/renderer/Window.cpp
 
 CMakeFiles/engine_lib.dir/src/renderer/Window.cpp.i: cmake_force
@@ -229,7 +271,7 @@ CMakeFiles/engine_lib.dir/src/renderer/Window.cpp.s: cmake_force
 CMakeFiles/engine_lib.dir/src/scene/SceneManager.cpp.o: CMakeFiles/engine_lib.dir/flags.make
 CMakeFiles/engine_lib.dir/src/scene/SceneManager.cpp.o: /home/nick/dev/engine/src/scene/SceneManager.cpp
 CMakeFiles/engine_lib.dir/src/scene/SceneManager.cpp.o: CMakeFiles/engine_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/engine_lib.dir/src/scene/SceneManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/engine_lib.dir/src/scene/SceneManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine_lib.dir/src/scene/SceneManager.cpp.o -MF CMakeFiles/engine_lib.dir/src/scene/SceneManager.cpp.o.d -o CMakeFiles/engine_lib.dir/src/scene/SceneManager.cpp.o -c /home/nick/dev/engine/src/scene/SceneManager.cpp
 
 CMakeFiles/engine_lib.dir/src/scene/SceneManager.cpp.i: cmake_force
@@ -242,6 +284,9 @@ CMakeFiles/engine_lib.dir/src/scene/SceneManager.cpp.s: cmake_force
 
 # Object files for target engine_lib
 engine_lib_OBJECTS = \
+"CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.o" \
+"CMakeFiles/engine_lib.dir/src/audio/Music.cpp.o" \
+"CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.o" \
 "CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o" \
 "CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o" \
 "CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.o" \
@@ -258,6 +303,9 @@ engine_lib_OBJECTS = \
 # External object files for target engine_lib
 engine_lib_EXTERNAL_OBJECTS =
 
+libengine_lib.a: CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.o
+libengine_lib.a: CMakeFiles/engine_lib.dir/src/audio/Music.cpp.o
+libengine_lib.a: CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.o
 libengine_lib.a: CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o
 libengine_lib.a: CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o
 libengine_lib.a: CMakeFiles/engine_lib.dir/src/ecs/systems/PhysicsSystem.cpp.o
@@ -272,7 +320,7 @@ libengine_lib.a: CMakeFiles/engine_lib.dir/src/renderer/Window.cpp.o
 libengine_lib.a: CMakeFiles/engine_lib.dir/src/scene/SceneManager.cpp.o
 libengine_lib.a: CMakeFiles/engine_lib.dir/build.make
 libengine_lib.a: CMakeFiles/engine_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libengine_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nick/dev/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX static library libengine_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/engine_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine_lib.dir/link.txt --verbose=$(VERBOSE)
 

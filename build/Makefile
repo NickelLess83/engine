@@ -156,6 +156,78 @@ game/fast:
 	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/build
 .PHONY : game/fast
 
+src/audio/AudioSystem.o: src/audio/AudioSystem.cpp.o
+.PHONY : src/audio/AudioSystem.o
+
+# target to build an object file
+src/audio/AudioSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_lib.dir/build.make CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.o
+.PHONY : src/audio/AudioSystem.cpp.o
+
+src/audio/AudioSystem.i: src/audio/AudioSystem.cpp.i
+.PHONY : src/audio/AudioSystem.i
+
+# target to preprocess a source file
+src/audio/AudioSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_lib.dir/build.make CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.i
+.PHONY : src/audio/AudioSystem.cpp.i
+
+src/audio/AudioSystem.s: src/audio/AudioSystem.cpp.s
+.PHONY : src/audio/AudioSystem.s
+
+# target to generate assembly for a file
+src/audio/AudioSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_lib.dir/build.make CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.s
+.PHONY : src/audio/AudioSystem.cpp.s
+
+src/audio/Music.o: src/audio/Music.cpp.o
+.PHONY : src/audio/Music.o
+
+# target to build an object file
+src/audio/Music.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_lib.dir/build.make CMakeFiles/engine_lib.dir/src/audio/Music.cpp.o
+.PHONY : src/audio/Music.cpp.o
+
+src/audio/Music.i: src/audio/Music.cpp.i
+.PHONY : src/audio/Music.i
+
+# target to preprocess a source file
+src/audio/Music.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_lib.dir/build.make CMakeFiles/engine_lib.dir/src/audio/Music.cpp.i
+.PHONY : src/audio/Music.cpp.i
+
+src/audio/Music.s: src/audio/Music.cpp.s
+.PHONY : src/audio/Music.s
+
+# target to generate assembly for a file
+src/audio/Music.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_lib.dir/build.make CMakeFiles/engine_lib.dir/src/audio/Music.cpp.s
+.PHONY : src/audio/Music.cpp.s
+
+src/audio/Sound.o: src/audio/Sound.cpp.o
+.PHONY : src/audio/Sound.o
+
+# target to build an object file
+src/audio/Sound.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_lib.dir/build.make CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.o
+.PHONY : src/audio/Sound.cpp.o
+
+src/audio/Sound.i: src/audio/Sound.cpp.i
+.PHONY : src/audio/Sound.i
+
+# target to preprocess a source file
+src/audio/Sound.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_lib.dir/build.make CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.i
+.PHONY : src/audio/Sound.cpp.i
+
+src/audio/Sound.s: src/audio/Sound.cpp.s
+.PHONY : src/audio/Sound.s
+
+# target to generate assembly for a file
+src/audio/Sound.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_lib.dir/build.make CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.s
+.PHONY : src/audio/Sound.cpp.s
+
 src/collision/CollisionSystem.o: src/collision/CollisionSystem.cpp.o
 .PHONY : src/collision/CollisionSystem.o
 
@@ -479,6 +551,15 @@ help:
 	@echo "... engine_lib"
 	@echo "... game"
 	@echo "... glad"
+	@echo "... src/audio/AudioSystem.o"
+	@echo "... src/audio/AudioSystem.i"
+	@echo "... src/audio/AudioSystem.s"
+	@echo "... src/audio/Music.o"
+	@echo "... src/audio/Music.i"
+	@echo "... src/audio/Music.s"
+	@echo "... src/audio/Sound.o"
+	@echo "... src/audio/Sound.i"
+	@echo "... src/audio/Sound.s"
 	@echo "... src/collision/CollisionSystem.o"
 	@echo "... src/collision/CollisionSystem.i"
 	@echo "... src/collision/CollisionSystem.s"

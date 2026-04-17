@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.o"
+  "CMakeFiles/engine_lib.dir/src/audio/AudioSystem.cpp.o.d"
+  "CMakeFiles/engine_lib.dir/src/audio/Music.cpp.o"
+  "CMakeFiles/engine_lib.dir/src/audio/Music.cpp.o.d"
+  "CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.o"
+  "CMakeFiles/engine_lib.dir/src/audio/Sound.cpp.o.d"
   "CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o"
   "CMakeFiles/engine_lib.dir/src/collision/CollisionSystem.cpp.o.d"
   "CMakeFiles/engine_lib.dir/src/core/Engine.cpp.o"
