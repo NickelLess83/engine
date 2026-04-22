@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/game.dir/link.d CMakeFiles/game.dir/src/GameScene.cpp.o CMakeFiles/game.dir/src/main.cpp.o -o game  ../libengine_lib.a /usr/lib/libSDL2main.a /usr/lib/libSDL2-2.0.so.0.3200.66 -lSDL2_mixer -lSDL2 /usr/lib/libGLX.so /usr/lib/libOpenGL.so ../libglad.a /usr/lib/libglm.a
