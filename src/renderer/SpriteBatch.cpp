@@ -15,7 +15,8 @@ SpriteBatch::SpriteBatch(size_t maxSprites) : m_maxSprites(maxSprites)
     // Dynamic vertex buffer — updated every frame
     glGenBuffers(1, &m_vbo);
     glBindBuffer(GL_ARRAY_BUFFER, m_vbo);
-    glBufferData(GL_ARRAY_BUFFER, maxSprites * 4 * 8 * sizeof(float), nullptr, GL_DYNAMIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, static_cast<GLsizeiptr>(maxSprites * 4 * 8 * sizeof(float)),
+                 nullptr, GL_DYNAMIC_DRAW);
 
     // Static index buffer — pattern never changes
     std::vector<unsigned int> indices(maxSprites * 6);
@@ -31,13 +32,14 @@ SpriteBatch::SpriteBatch(size_t maxSprites) : m_maxSprites(maxSprites)
 
     glGenBuffers(1, &m_ebo);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_ebo);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(unsigned int), indices.data(),
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER,
+                 static_cast<GLsizeiptr>(indices.size() * sizeof(unsigned int)), indices.data(),
                  GL_STATIC_DRAW);
 
     // layout: position(2), texCoord(2), color(4) — matches sprite.vert
     constexpr int STRIDE = 8 * sizeof(float);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, STRIDE, (void *)0);
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, STRIDE, nullptr);
     glEnableVertexAttribArray(1);
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, STRIDE, (void *)(2 * sizeof(float)));
     glEnableVertexAttribArray(2);
@@ -78,7 +80,8 @@ void SpriteBatch::flush(const RenderQueue &queue)
 
     glBindVertexArray(m_vao);
     glBindBuffer(GL_ARRAY_BUFFER, m_vbo);
-    glBufferSubData(GL_ARRAY_BUFFER, 0, verts.size() * sizeof(float), verts.data());
+    glBufferSubData(GL_ARRAY_BUFFER, 0, static_cast<GLsizeiptr>(verts.size() * sizeof(float)),
+                    verts.data());
 
     // Issue one draw call per texture group
     uint32_t currentTex = cmds[0].textureID;

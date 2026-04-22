@@ -16,7 +16,7 @@ void GameScene::onEnter(engine::AssetManager &assets)
     using namespace engine;
 
     constexpr int SIZE = 64, CELL = 8;
-    std::vector<unsigned char> pixels(SIZE * SIZE * 4);
+    std::vector<unsigned char> pixels(static_cast<std::size_t>(SIZE) * SIZE * 4);
     for (int y = 0; y < SIZE; ++y) {
         for (int x = 0; x < SIZE; ++x) {
             bool light = ((x / CELL) + (y / CELL)) % 2 == 0;
@@ -36,7 +36,7 @@ void GameScene::onEnter(engine::AssetManager &assets)
     constexpr float PI = 3.14159265f;
 
     for (int i = 0; i < COUNT; ++i) {
-        float angle = i * (2.0f * PI / COUNT);
+        float angle = static_cast<float>(i) * (2.0f * PI / COUNT);
         Entity e = registry.create();
         registry.emplace<Transform>(e, glm::vec2{std::cos(angle) * 120.0f, std::sin(angle) * 80.0f},
                                     glm::vec2{80.0f, 80.0f}, 0.0f);

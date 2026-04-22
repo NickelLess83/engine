@@ -8,6 +8,7 @@ Checks: >-
   modernize-use-emplace,
   modernize-redundant-void-arg,
   performance-*,
+  -performance-no-int-to-ptr,
   readability-const-return-type,
   readability-container-size-empty,
   readability-delete-null-pointer,

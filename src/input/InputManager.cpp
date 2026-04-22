@@ -166,6 +166,8 @@ void InputManager::update()
             m_keys[idx] = KeyState::JustReleased;
             break;
         }
+        default:
+            break;
         }
     }
 }

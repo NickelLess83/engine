@@ -11,8 +11,8 @@ Camera::Camera(int viewportWidth, int viewportHeight)
 
 glm::mat4 Camera::viewProjection() const
 {
-    float halfW = (m_width * 0.5f) / zoom;
-    float halfH = (m_height * 0.5f) / zoom;
+    float halfW = (static_cast<float>(m_width) * 0.5f) / zoom;
+    float halfH = (static_cast<float>(m_height) * 0.5f) / zoom;
 
     return glm::ortho(position.x - halfW, position.x + halfW, position.y - halfH,
                       position.y + halfH, -1.0f, 1.0f);
@@ -20,8 +20,8 @@ glm::mat4 Camera::viewProjection() const
 
 glm::vec2 Camera::screenToWorld(glm::vec2 screenPos) const
 {
-    return {position.x + (screenPos.x - m_width * 0.5f) / zoom,
-            position.y + (m_height * 0.5f - screenPos.y) / zoom};
+    return {position.x + (screenPos.x - static_cast<float>(m_width) * 0.5f) / zoom,
+            position.y + (static_cast<float>(m_height) * 0.5f - screenPos.y) / zoom};
 }
 
 } // namespace engine

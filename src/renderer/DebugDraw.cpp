@@ -24,7 +24,7 @@ DebugDraw::DebugDraw()
     // layout: position(2), color(4) — matches debug.vert
     constexpr int STRIDE = 6 * sizeof(float);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, STRIDE, (void *)0);
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, STRIDE, nullptr);
     glEnableVertexAttribArray(1);
     glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, STRIDE, (void *)(2 * sizeof(float)));
 
@@ -68,8 +68,8 @@ void DebugDraw::circle(glm::vec2 center, float radius, glm::vec4 color, int segm
         return;
     float step = 2.0f * 3.14159265f / static_cast<float>(segments);
     for (int i = 0; i < segments; ++i) {
-        float a0 = step * i;
-        float a1 = step * (i + 1);
+        float a0 = step * static_cast<float>(i);
+        float a1 = step * static_cast<float>(i + 1);
         line({center.x + std::cos(a0) * radius, center.y + std::sin(a0) * radius},
              {center.x + std::cos(a1) * radius, center.y + std::sin(a1) * radius}, color);
     }
@@ -89,7 +89,8 @@ void DebugDraw::flush(const glm::mat4 &viewProjection)
 
     glBindVertexArray(m_vao);
     glBindBuffer(GL_ARRAY_BUFFER, m_vbo);
-    glBufferSubData(GL_ARRAY_BUFFER, 0, m_verts.size() * sizeof(Vertex), m_verts.data());
+    glBufferSubData(GL_ARRAY_BUFFER, 0, static_cast<GLsizeiptr>(m_verts.size() * sizeof(Vertex)),
+                    m_verts.data());
 
     m_shader->bind();
     m_shader->setMat4("u_viewProjection", viewProjection);
