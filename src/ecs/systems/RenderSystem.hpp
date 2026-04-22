@@ -1,13 +1,15 @@
 #pragma once
 
-namespace engine {
+namespace engine
+{
 class Registry;
 class RenderQueue;
 class AssetManager;
 
-class RenderSystem {
+class RenderSystem
+{
 public:
-    void extract(Registry& reg, AssetManager& assets, RenderQueue& queue, float alpha);
+    void extract(Registry &reg, AssetManager &assets, RenderQueue &queue, float alpha);
 };
 
 } // namespace engine

@@ -6,32 +6,27 @@
 #include <cassert>
 #include <stdexcept>
 
-namespace engine {
+namespace engine
+{
 
-void SceneManager::registerScene(const std::string& name,
-                                  std::function<std::unique_ptr<Scene>()> factory)
+void SceneManager::registerScene(const std::string &name,
+                                 std::function<std::unique_ptr<Scene>()> factory)
 {
     m_factories[name] = std::move(factory);
 }
 
-void SceneManager::push(const std::string& name)
-{
-    m_pending.push_back({TransType::Push, name});
-}
+void SceneManager::push(const std::string &name) { m_pending.push_back({TransType::Push, name}); }
 
-void SceneManager::pop()
-{
-    m_pending.push_back({TransType::Pop, ""});
-}
+void SceneManager::pop() { m_pending.push_back({TransType::Pop, ""}); }
 
-void SceneManager::replace(const std::string& name)
+void SceneManager::replace(const std::string &name)
 {
     m_pending.push_back({TransType::Replace, name});
 }
 
-void SceneManager::applyPendingTransitions(AssetManager& assets)
+void SceneManager::applyPendingTransitions(AssetManager &assets)
 {
-    for (auto& t : m_pending) {
+    for (auto &t : m_pending) {
         switch (t.type) {
 
         case TransType::Push: {
@@ -68,19 +63,20 @@ void SceneManager::applyPendingTransitions(AssetManager& assets)
     m_pending.clear();
 }
 
-void SceneManager::update(float dt, InputManager& input)
+void SceneManager::update(float dt, InputManager &input)
 {
     // Update from top; propagate downward while each scene says "below me is active".
     for (int i = (int)m_stack.size() - 1; i >= 0; --i) {
         m_stack[i]->update(dt, input);
-        if (!m_stack[i]->isActive()) break;
+        if (!m_stack[i]->isActive())
+            break;
     }
 }
 
-void SceneManager::render(RenderQueue& queue, AssetManager& assets,
-                           DebugDraw& debug, float alpha)
+void SceneManager::render(RenderQueue &queue, AssetManager &assets, DebugDraw &debug, float alpha)
 {
-    if (m_stack.empty()) return;
+    if (m_stack.empty())
+        return;
 
     // Find the deepest scene that must render (first non-transparent from the top).
     int startIdx = (int)m_stack.size() - 1;

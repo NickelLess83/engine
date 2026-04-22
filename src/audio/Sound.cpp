@@ -2,9 +2,10 @@
 #include <SDL2/SDL_mixer.h>
 #include <stdexcept>
 
-namespace engine {
+namespace engine
+{
 
-Sound::Sound(const std::string& path)
+Sound::Sound(const std::string &path)
 {
     m_chunk = Mix_LoadWAV(path.c_str());
     if (!m_chunk)
@@ -13,16 +14,18 @@ Sound::Sound(const std::string& path)
 
 Sound::~Sound()
 {
-    if (m_chunk) Mix_FreeChunk(m_chunk);
+    if (m_chunk)
+        Mix_FreeChunk(m_chunk);
 }
 
-Sound::Sound(Sound&& o) noexcept : m_chunk(o.m_chunk) { o.m_chunk = nullptr; }
+Sound::Sound(Sound &&o) noexcept : m_chunk(o.m_chunk) { o.m_chunk = nullptr; }
 
-Sound& Sound::operator=(Sound&& o) noexcept
+Sound &Sound::operator=(Sound &&o) noexcept
 {
     if (this != &o) {
-        if (m_chunk) Mix_FreeChunk(m_chunk);
-        m_chunk   = o.m_chunk;
+        if (m_chunk)
+            Mix_FreeChunk(m_chunk);
+        m_chunk = o.m_chunk;
         o.m_chunk = nullptr;
     }
     return *this;

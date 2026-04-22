@@ -3,32 +3,88 @@
 #include <string>
 #include <unordered_map>
 
-namespace engine {
+namespace engine
+{
 
 enum class Key {
     Unknown,
-    Escape, Space, Enter, Backspace, Tab,
-    Left, Right, Up, Down,
-    A, B, C, D, E, F, G, H, I, J, K, L, M,
-    N, O, P, Q, R, S, T, U, V, W, X, Y, Z,
-    Num0, Num1, Num2, Num3, Num4,
-    Num5, Num6, Num7, Num8, Num9,
-    F1, F2, F3, F4, F5, F6,
-    F7, F8, F9, F10, F11, F12,
-    LShift, RShift, LCtrl, RCtrl, LAlt, RAlt,
+    Escape,
+    Space,
+    Enter,
+    Backspace,
+    Tab,
+    Left,
+    Right,
+    Up,
+    Down,
+    A,
+    B,
+    C,
+    D,
+    E,
+    F,
+    G,
+    H,
+    I,
+    J,
+    K,
+    L,
+    M,
+    N,
+    O,
+    P,
+    Q,
+    R,
+    S,
+    T,
+    U,
+    V,
+    W,
+    X,
+    Y,
+    Z,
+    Num0,
+    Num1,
+    Num2,
+    Num3,
+    Num4,
+    Num5,
+    Num6,
+    Num7,
+    Num8,
+    Num9,
+    F1,
+    F2,
+    F3,
+    F4,
+    F5,
+    F6,
+    F7,
+    F8,
+    F9,
+    F10,
+    F11,
+    F12,
+    LShift,
+    RShift,
+    LCtrl,
+    RCtrl,
+    LAlt,
+    RAlt,
     _Count
 };
 
-class InputManager {
+class InputManager
+{
 public:
     void update();
     void endFrame();
 
-    void bindAction(const std::string& action, Key key);
+    void bindAction(const std::string &action, Key key);
 
-    bool isActionJustPressed (const std::string& action) const;
-    bool isActionHeld         (const std::string& action) const;
-    bool isActionJustReleased (const std::string& action) const;
+    bool isActionJustPressed(const std::string &action) const;
+    bool isActionHeld(const std::string &action) const;
+    bool isActionJustReleased(const std::string &action) const;
 
     bool quitRequested() const { return m_quit; }
 

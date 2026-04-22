@@ -8,7 +8,8 @@
 #include <algorithm>
 #include <cmath>
 
-namespace engine {
+namespace engine
+{
 
 AudioSystem::AudioSystem()
 {
@@ -16,7 +17,8 @@ AudioSystem::AudioSystem()
         SDL_InitSubSystem(SDL_INIT_AUDIO);
 
     if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) < 0)
-        throw std::runtime_error(std::string("AudioSystem: Mix_OpenAudio failed: ") + Mix_GetError());
+        throw std::runtime_error(std::string("AudioSystem: Mix_OpenAudio failed: ") +
+                                 Mix_GetError());
 
     Mix_AllocateChannels(CHANNELS);
 
@@ -38,15 +40,14 @@ AudioSystem::~AudioSystem()
 // --------------------------------------------------------------------------
 // update
 // --------------------------------------------------------------------------
-void AudioSystem::update(AudioEventQueue& queue, AssetManager& assets,
-                         glm::vec2 listenerPos)
+void AudioSystem::update(AudioEventQueue &queue, AssetManager &assets, glm::vec2 listenerPos)
 {
     // Refresh channel active flags from SDL2_mixer
     for (int i = 0; i < CHANNELS; ++i)
         if (m_channels[i].active && !Mix_Playing(i))
             m_channels[i] = {};
 
-    for (const auto& e : queue.events()) {
+    for (const auto &e : queue.events()) {
         switch (e.type) {
         case AudioEvent::Type::PlaySound:
             playSound(e, assets, listenerPos);
@@ -57,7 +58,7 @@ void AudioSystem::update(AudioEventQueue& queue, AssetManager& assets,
                 // music handle stored in e.music field
             }
             if (e.music.valid()) {
-                auto& m = assets.resolve(e.music);
+                auto &m = assets.resolve(e.music);
                 if (m.valid()) {
                     int loops = -1; // loop forever
                     Mix_VolumeMusic(static_cast<int>(e.volume * MIX_MAX_VOLUME));
@@ -85,10 +86,11 @@ void AudioSystem::update(AudioEventQueue& queue, AssetManager& assets,
 // --------------------------------------------------------------------------
 // crossfadeTo
 // --------------------------------------------------------------------------
-void AudioSystem::crossfadeTo(Handle<Music> handle, AssetManager& assets, float duration)
+void AudioSystem::crossfadeTo(Handle<Music> handle, AssetManager &assets, float duration)
 {
-    auto& m = assets.resolve(handle);
-    if (!m.valid()) return;
+    auto &m = assets.resolve(handle);
+    if (!m.valid())
+        return;
 
     if (Mix_PlayingMusic())
         Mix_FadeOutMusic(static_cast<int>(duration * 500.0f)); // fade old out in half the time
@@ -100,14 +102,17 @@ void AudioSystem::crossfadeTo(Handle<Music> handle, AssetManager& assets, float 
 // --------------------------------------------------------------------------
 // playSound
 // --------------------------------------------------------------------------
-void AudioSystem::playSound(const AudioEvent& e, AssetManager& assets, glm::vec2 listenerPos)
+void AudioSystem::playSound(const AudioEvent &e, AssetManager &assets, glm::vec2 listenerPos)
 {
-    if (!e.sound.valid()) return;
-    auto& snd = assets.resolve(e.sound);
-    if (!snd.valid()) return;
+    if (!e.sound.valid())
+        return;
+    auto &snd = assets.resolve(e.sound);
+    if (!snd.valid())
+        return;
 
     int ch = findChannel(e.priority);
-    if (ch < 0) return; // all channels busy with higher-priority sounds
+    if (ch < 0)
+        return; // all channels busy with higher-priority sounds
 
     // Halt the channel if we're preempting something
     if (m_channels[ch].active)
@@ -120,14 +125,14 @@ void AudioSystem::playSound(const AudioEvent& e, AssetManager& assets, glm::vec2
         constexpr float MIN_DIST = 50.0f;
         constexpr float MAX_DIST = 800.0f;
         float dist = glm::length(*e.worldPosition - listenerPos);
-        float t    = (dist - MIN_DIST) / (MAX_DIST - MIN_DIST);
-        vol       *= 1.0f - std::clamp(t, 0.0f, 1.0f);
+        float t = (dist - MIN_DIST) / (MAX_DIST - MIN_DIST);
+        vol *= 1.0f - std::clamp(t, 0.0f, 1.0f);
 
         // Stereo pan: -1 (left) to +1 (right)
-        float dx  = e.worldPosition->x - listenerPos.x;
+        float dx = e.worldPosition->x - listenerPos.x;
         float pan = std::clamp(dx / MAX_DIST, -1.0f, 1.0f);
         // SDL2_mixer panning: left + right in range [0, 255]
-        Uint8 left  = static_cast<Uint8>((1.0f - std::max(0.0f,  pan)) * 127.5f);
+        Uint8 left = static_cast<Uint8>((1.0f - std::max(0.0f, pan)) * 127.5f);
         Uint8 right = static_cast<Uint8>((1.0f - std::max(0.0f, -pan)) * 127.5f);
         Mix_SetPanning(ch, left, right);
     }
@@ -145,7 +150,8 @@ int AudioSystem::findChannel(int priority) const
 {
     // First look for a free channel
     for (int i = 0; i < CHANNELS; ++i)
-        if (!m_channels[i].active) return i;
+        if (!m_channels[i].active)
+            return i;
 
     // All busy — preempt lowest-priority channel if it's below our priority
     int lowestPri = priority;

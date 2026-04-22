@@ -1,9 +1,11 @@
 #pragma once
 #include <glm/glm.hpp>
 
-namespace engine {
+namespace engine
+{
 
-class Camera {
+class Camera
+{
 public:
     Camera(int viewportWidth, int viewportHeight);
 
@@ -14,7 +16,7 @@ public:
     glm::vec2 screenToWorld(glm::vec2 screenPos) const;
 
     glm::vec2 position = {0.0f, 0.0f};
-    float     zoom     = 1.0f;
+    float zoom = 1.0f;
 
 private:
     int m_width;
