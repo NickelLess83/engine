@@ -1,0 +1,21 @@
+{
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureOnOpen": true,
+    "cmake.exportCompileCommandsFile": true,
+    "cmake.buildBeforeRun": true,
+    "cmake.defaultVariants": {
+        "buildType": {
+            "default": "debug",
+            "choices": {
+                "debug": {
+                    "short": "Debug",
+                    "buildType": "Debug"
+                },
+                "release": {
+                    "short": "Release",
+                    "buildType": "Release"
+                }
+            }
+        }
+    }
+}
