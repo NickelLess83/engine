@@ -1,13 +1,15 @@
 #pragma once
 #include "CollisionEvent.hpp"
 
-namespace engine {
+namespace engine
+{
 class Registry;
 
-class CollisionSystem {
+class CollisionSystem
+{
 public:
     // cellSize should be roughly 2x the average collider size.
-    void update(Registry& reg, CollisionEventQueue& events, float cellSize = 128.0f);
+    void update(Registry &reg, CollisionEventQueue &events, float cellSize = 128.0f);
 };
 
 } // namespace engine

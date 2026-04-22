@@ -4,24 +4,26 @@
 // Forward-declare to keep SDL_mixer out of headers
 struct Mix_Chunk;
 
-namespace engine {
+namespace engine
+{
 
-class Sound {
+class Sound
+{
 public:
     Sound() = default;
-    explicit Sound(const std::string& path);
+    explicit Sound(const std::string &path);
     ~Sound();
 
-    Sound(const Sound&)            = delete;
-    Sound& operator=(const Sound&) = delete;
-    Sound(Sound&& o) noexcept;
-    Sound& operator=(Sound&& o) noexcept;
+    Sound(const Sound &) = delete;
+    Sound &operator=(const Sound &) = delete;
+    Sound(Sound &&o) noexcept;
+    Sound &operator=(Sound &&o) noexcept;
 
-    Mix_Chunk* chunk() const { return m_chunk; }
-    bool       valid() const { return m_chunk != nullptr; }
+    Mix_Chunk *chunk() const { return m_chunk; }
+    bool valid() const { return m_chunk != nullptr; }
 
 private:
-    Mix_Chunk* m_chunk = nullptr;
+    Mix_Chunk *m_chunk = nullptr;
 };
 
 } // namespace engine

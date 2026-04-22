@@ -1,0 +1,34 @@
+name: Clang Tidy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  tidy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            cmake \
+            pkg-config \
+            clang-tidy \
+            libsdl2-dev \
+            libsdl2-mixer-dev \
+            libglm-dev \
+            libgl-dev
+
+      - name: Configure
+        run: cmake -B build -DCMAKE_BUILD_TYPE=Debug
+
+      - name: Run clang-tidy
+        run: |
+          find src game/src -name '*.cpp' \
+            | xargs clang-tidy -p build

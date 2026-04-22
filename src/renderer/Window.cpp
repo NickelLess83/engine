@@ -3,10 +3,10 @@
 #include <glad/glad.h>
 #include <stdexcept>
 
-namespace engine {
+namespace engine
+{
 
-Window::Window(const WindowConfig& config)
-    : m_width(config.width), m_height(config.height)
+Window::Window(const WindowConfig &config) : m_width(config.width), m_height(config.height)
 {
     if (SDL_Init(SDL_INIT_VIDEO) != 0)
         throw std::runtime_error(SDL_GetError());
@@ -15,12 +15,9 @@ Window::Window(const WindowConfig& config)
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
 
-    m_window = SDL_CreateWindow(
-        config.title.c_str(),
-        SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
-        config.width, config.height,
-        SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN
-    );
+    m_window =
+        SDL_CreateWindow(config.title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
+                         config.width, config.height, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN);
 
     if (!m_window) {
         SDL_Quit();
@@ -57,14 +54,8 @@ Window::~Window()
     SDL_Quit();
 }
 
-void Window::swapBuffers()
-{
-    SDL_GL_SwapWindow(m_window);
-}
+void Window::swapBuffers() { SDL_GL_SwapWindow(m_window); }
 
-void Window::close()
-{
-    m_open = false;
-}
+void Window::close() { m_open = false; }
 
 } // namespace engine
